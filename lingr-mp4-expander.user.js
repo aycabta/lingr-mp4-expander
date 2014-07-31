@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       Lingr MP4 Expander
 // @namespace  http://aycabta.github.io/
-// @version    0.1.1
+// @version    0.1.2
 // @description  URL -> embedded player
 // @include    http://lingr.com/
 // @include    http://lingr.com/room/*/archives*
