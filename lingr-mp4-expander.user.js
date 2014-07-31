@@ -21,7 +21,7 @@
                 if (hit != null) {
                     url = hit[1];
                     var tag;
-                    tag =       '<div class="mask" style="margin: 0px; padding: 0px; width: 490px; height: 307px;">';
+                    tag =       '<div class="mask">';
                     tag = tag + '<video src="' + url + '" controls="controls" />';
                     tag = tag + '<div onclick="Modeless.showVideoModeless(this)"></div></div>';
                     return tag;
