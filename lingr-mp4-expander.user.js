@@ -18,7 +18,7 @@
             var newStr = Lingr.Text.oldMP4ExpanderDecorate(str);
             var convertedStr = newStr.split('<\/p><p>').map(function(s) {
                 hit = s.match(/^<a href.+>((?:http:\/\/)?.+.[Mm][Pp]4(?:\?.*)?)<\/a>$/);
-                if (hit != null) {
+                if (hit !== null) {
                     url = hit[1];
                     var tag;
                     tag =       '<div class="mask" style="margin: 0px; padding: 0px; width: 490px; height: 307px;">';
@@ -36,7 +36,7 @@
         for (i = 0; i < messages.length; i++) {
             var oldMessage = messages[i].innerHTML;
             hit = oldMessage.match(/^<a href.+>((?:http:\/\/)?.+.[Mm][Pp]4(?:\?.*)?)<\/a>$/);
-            if (hit != null) {
+            if (hit !== null) {
                     url = hit[1];
                 messages[i].innerHTML = '<video src="' + url + '" controls="controls" preload="metadata" />';
             }
